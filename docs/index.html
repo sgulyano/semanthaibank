@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Semanthai Bank: Thai Corpus and Benchmarks on Automated Semantic Role Annotation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+        .black-frame {
+            height: 100%;
+            background: #171617;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            margin: 10px;
+        }
+
+        .card .media-content .title,
+        .card .media-content .subtitle {
+            color: #4a4a4a;
+        }
+
+        .subtitle {
+            margin-top: -0.8rem !important;
+        }
+
+        .card-footer {
+            text-align: center;
+        }
+
+        h1.title {
+            font-size: 30px;
+            margin-bottom: 10px !important;
+        }
+
+        h1 {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .author {
+            display: inline;
+            margin: 15px;
+            color: #3376cb;
+        }
+
+        .contrib {
+            font-size: 12px;
+        }
+
+        .aff {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .head_cap {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .location {
+            font-size: 16px;
+        }
+
+        .hero-body {
+            padding: 20px;
+        }
+
+        .column {
+            padding: 0px !important;
+        }
+
+        .subtitle {
+            padding-top: 5px;
+            font-size: 16px;
+        }
+
+        .hero {
+            background-color: inherit !important;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .author {
+                font-size: 12px;
+            }
+
+            .aff {
+                font-size: 12px;
+            }
+
+            .location {
+                font-size: 12px;
+            }
+        }
+
+        .button-clipboard-tooltip {
+            display: none;
+            color: white;
+            background: rgba(74, 74, 74, 0.9);
+            border-radius: 2px;
+            padding: 0.5rem 1rem;
+            margin-right: 1rem;
+            text-overflow: ellipsis;
+            white-space: pre;
+        }
+
+        body {
+            background-color: #FAFAFA;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero is-light" style="">
+        <div class="hero-body" style="padding-top: 50px;">
+            <div class="container" style="text-align: center;margin-bottom:5px;">
+                <h1 class="title">
+                    Semanthai Bank: Thai Corpus and Benchmarks on Automated Semantic Role Annotation
+                </h1>
+
+                <div class="author">Krittanut Chungnoi</div>
+                <div class="author">Rachada Kongkachandra</div>
+                <div class="author"><a href="https://sgulyano.github.io/">Sarun Gulyanon*</a></div>
+                <div class="aff">
+                    <p style="color:gray;">
+                        Thammasat University
+                    </p>
+                </div>
+                <div class="location">
+                    <p style="color:gray;">
+                        Thailand
+                    </p>
+                </div>
+                <div class="con">
+                    <p style="font-size: 24px; margin-top:15px;">
+                        Language Resources and Evaluation (Under Review)
+                    </p>
+                </div>
+                <div class="contrib">
+                    *Corresponding author
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero">
+        <table align="center" width="300px">
+            <tbody>
+                <tr>
+                    <td align="center" width="100px">
+                        <center>
+                            <span style="font-size:20px"><a href="">[pdf]</a></span>
+                        </center>
+                    </td>
+                    <td align="center" width="100px">
+                        <center>
+                            <span style="font-size:20px"><a
+                                    href="https://github.com/sgulyano/semanthaibank">[code]</a></span>
+                        </center>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- <section class="section" style="display : flex; align-items : center;justify-content: center;padding: 10px;">
+        <div style="max-width:  900px;width: 900px;">
+            <div style="position: relative;width: 100%;height: 0;padding-bottom: 56.25%;">
+                <iframe height="506.25" width="900"
+                    style=" position: absolute;top: 0;left: 0;width: 100%;height: 100%;max-height: 100%; max-width: 100%;"
+                    src="" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section> -->
+    <!-- <center>
+        <img src="" width="800px" height="800px">
+        <div class="head_cap">
+            <p style="color:gray;">
+            </p>
+        </div>
+    </center> -->
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container" style="max-width: 800px">
+                <h1 style="">Abstract</h1>
+                <p style="text-align: justify; font-size: 17px;">
+                    Lexical resources have played a key role in advancing natural language processing research. One
+                    particular resource is VerbNet, which contains both syntactic and semantic information of verbs.
+                    However, the construction of lexical resources, especially for Thai VerbNet, are infeasible without
+                    a suitable tool to support the construction due to the complexity and laboriousness of the labeling
+                    task. In this work, we introduce the system for annotation and managing lexical resources,
+                    especially for FrameNet and VerbNet, to help facilitate the construction of lexical resources. This
+                    work presents an attempt to construct the first version of a Thai VerbNet corpus via data enrichment
+                    of the existing lexical resource. The algorithms for semantic role labeling are surveyed and the
+                    algorithm for verb classification is invented to facilitate the construction of the lexical
+                    resources. In our experiments, we achieved the prototype of the Thai VerbNet corpus and along with
+                    our method, they provide the baseline and benchmark for future work.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="hero is-light" style="">
+        <div class="hero-body">
+            <div class="container" style="text-align: center;">
+                <div class="columns">
+                    <div class="column"></div>
+                    <div class="column">
+                        <a href="" target="_blank">
+                            <div>
+                                <img src="assets/images/paper.PNG"
+                                    style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3); border-radius: 5px; padding: 5px;"
+                                    width="40%" height="40%">
+                            </div>
+                            <p style="color:#3376cb;">Paper</p>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <a href="" target="_blank">
+                            <div>
+                                <img src=""
+                                    style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3); border-radius: 5px; padding: 5px;"
+                                    width="72%" height="72%">
+                            </div>
+                            <p style="color:#3376cb;"></p>
+                        </a>
+                    </div>
+                    <div class="column"></div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section class="hero is-light" style="background-color: #FFFFFF;">
+        <div class="hero-body">
+            <div class="container" style="max-width:800px;">
+                <h1>
+                    VerbNet Dataset
+                </h1>
+
+                <p style="text-align: justify; font-size: 17px;">
+                    In our experiments, we achieved the prototype of the Thai VerbNet corpus and along with our method,
+                    they provide the baseline and benchmark for future work.
+                </p>
+
+                <div class="hero-body">
+                    <div class="container" style="text-align: center;">
+                        <div class="columns">
+                            <div class="column"></div>
+                            <div class="column">
+                                <a href="" target="_blank">
+                                    <div>
+                                        <img src="assets/images/json.svg"
+                                            style=" box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3); border-radius: 5px; padding: 5px;"
+                                            width="30%" height="30%">
+                                    </div>
+                                    <p style="color:#3376cb;">VerbNet Dataset</p>
+                                </a>
+                            </div>
+                            <div class="column"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero" style="padding-top:0px;">
+        <div class="hero-body">
+            <div class="container" style="max-width:900px;">
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            BibTex
+                        </p>
+                        <a class="card-header-icon button-clipboard" style="border:0px; background: inherit;"
+                            data-clipboard-target="#bibtex-info">
+                            <div class="button-clipboard-tooltip">Copied!</div>
+                            <span class="icon">
+                                <img src="assets/images/copy.svg" style="height: 20px;" />
+                            </span>
+                        </a>
+                    </header>
+                    <div class="card-content">
+                        <pre style="background-color:inherit;padding: 0px;" id="bibtex-info">
+</pre>
+                    </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container" style="width: 400px">
+                <div class="columns" style="text-align: center;">
+                    <div class="column">
+                        <a href="https://cis.tu.ac.th/" target="_blank">CISTU</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
+    <script>
+        var clipboard = new ClipboardJS('.button-clipboard');
+        function setTooltip() {
+            var tooltip = document.querySelector('.button-clipboard-tooltip');
+            tooltip.style.display = 'block';
+        }
+        function hideTooltip() {
+            var tooltip = document.querySelector('.button-clipboard-tooltip');
+            tooltip.style.display = 'none';
+        }
+        clipboard.on('success', function (e) {
+            setTooltip(e.trigger, 'Copied!');
+            setTimeout(function () {
+                hideTooltip(e.trigger);
+            }, 2000);
+        });
+
+    </script>
+</body>
+
+</html>
