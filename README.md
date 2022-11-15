@@ -10,9 +10,9 @@ Lexical resources have played a key role in advancing natural language processin
 
 ## Table of contents
 -----
-  * [Getting Started](#Getting-started)
-  * [Dataset](#Verb-Class-Dataset)
-  * [Citation](#Citation)
+  * [Getting Started](#getting-started)
+  * [Dataset](#verb-class-dataset)
+  * [Citation](#citation)
 ------
 
 
