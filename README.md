@@ -18,8 +18,31 @@ Lexical resources have played a key role in advancing natural language processin
 
 ## Getting started
 
+Code consists of two parts: front-end (in `semantic_update` folder) and back-end (through API in `SemanticRole` folder). First, setup the back-end using the provided docker container.
+
 ```shell
+docker-compose up --build
 ```
+
+Finish the back-end setup by initialize the database.
+
+```shell
+docker-compose exec web python manage.py migrate
+```
+
+To temporarily turn off the back-end, use: 
+
+```shell
+docker-compose stop
+```
+
+To completely remove the back-end, use: 
+
+```shell
+docker-compose down -v
+```
+
+Then, to use the front-end, open `./semantic_update/article_list.html` in web browser.
 
 
 ## Verb Class Dataset
