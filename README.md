@@ -1,6 +1,6 @@
 # Semanthai Bank: Thai Corpus and Benchmarks on Automated Semantic Role Annotation
 
-### [Project Page](https://sgulyano.github.io/semanthaibank) | [Paper]() | [Verb Class Dataset](https://sgulyano.github.io/semanthaibank/data/verb_class.json)
+### [Project Page](https://sgulyano.github.io/semanthaibank) | [Paper](https://doi.org/10.1145/3638533) | [Verb Class Dataset](https://sgulyano.github.io/semanthaibank/data/verb_class.json)
 
 
 ## Abstract
@@ -53,4 +53,21 @@ Then, to use the front-end, open `./semantic_update/article_list.html` in web br
 ## Citation
 
 ```
+@article{10.1145/3638533,
+    author = {Chungnoi, Krittanut and Kongkachandra, Rachada and Gulyanon, Sarun},
+    title = {The Computational Method for Supporting Thai VerbNet Construction},
+    year = {2024},
+    issue_date = {February 2024},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    volume = {23},
+    number = {2},
+    issn = {2375-4699},
+    url = {https://doi.org/10.1145/3638533},
+    doi = {10.1145/3638533},
+    journal = {ACM Trans. Asian Low-Resour. Lang. Inf. Process.},
+    month = {feb},
+    articleno = {22},
+    numpages = {15}
+    }
 ```
